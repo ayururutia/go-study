@@ -1,5 +1,4 @@
 {
-	"name": "test",
-	"image": "ayururutia/universal",
-	"remoteUser": "ayu"
+	"name": "universal",
+	"image": "ayururutia/universal"
 }
