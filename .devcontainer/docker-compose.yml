@@ -1,0 +1,27 @@
+version: '3.8'
+services:
+  devcontainer:
+    image: ayururutia/go
+    volumes:
+      - ../..:/workspaces:cached
+    network_mode: service:db
+    command: sleep infinity
+
+  db:
+    image: mysql:5.7.44
+    restart: unless-stopped
+    volumes:
+      - mysql-data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: x
+      MYSQL_USER: x
+      MYSQL_PASSWORD: x
+
+volumes:
+  mysql-data:
+
+#  容器链接db 自己可以 localhost
+#  持久目录 zai  docker/volumes/godev_devcontainer_mysql-data/_data
+#  这样 容器就是所有的环境
+#  容器名称会随项目 godev_devcontainer-devcontainer-1
