@@ -16,7 +16,7 @@ func main() {
 		}
 	}
 
-	kvs := map[string]string{"a": "apple", "b": "banana"}
+	kvs := map[string]string{"aaa": "apple", "b": "banana"}
 	for k, v := range kvs {
 		fmt.Println("%s -> %s\n", k, v)
 	}

@@ -20,7 +20,7 @@ func main() {
 	case time.Saturday, time.Sunday:
 		fmt.Println("It's the weekend")
 	default:
-		fmt.Println("it's a weekday")
+		fmt.Println("it's aaa weekday")
 	}
 	t := time.Now()
 	switch {
@@ -32,9 +32,9 @@ func main() {
 	whatAmI := func(i interface{}) {
 		switch t := i.(type) {
 		case bool:
-			fmt.Println("I'm a bool")
+			fmt.Println("I'm aaa bool")
 		case int:
-			fmt.Println("I'm a int")
+			fmt.Println("I'm aaa int")
 		default:
 			fmt.Println("Dont't know type %T\n", t)
 		}

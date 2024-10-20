@@ -11,7 +11,7 @@ func main() {
 	s = make([]string, 3)
 	fmt.Println("emp:", s, "len:", len(s), "cap:", cap(s))
 
-	s[0] = "a"
+	s[0] = "aaa"
 	s[1] = "b"
 	s[2] = "c"
 	fmt.Println("set:", s)
