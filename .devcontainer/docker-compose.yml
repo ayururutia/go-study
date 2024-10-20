@@ -1,7 +1,7 @@
 version: '3.8'
 services:
   devcontainer:
-    image: ayururutia/go
+    image: ayururutia/go-cn
     volumes:
       - ../..:/workspaces:cached
     network_mode: service:db
