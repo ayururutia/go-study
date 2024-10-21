@@ -1,8 +1,6 @@
-version: '3.8'
 services:
   devcontainer:
     image: ayururutia/go
     volumes:
       - ../..:/workspaces:cached
-    network_mode: service:db
     command: sleep infinity
